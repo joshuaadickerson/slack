@@ -1,13 +1,13 @@
 <?php
 
-use Maknz\Slack\Message;
-use Maknz\Slack\Attachment;
+use JoshuaADickerson\Slack\Message;
+use JoshuaADickerson\Slack\Attachment;
 
 class MessageUnitTest extends PHPUnit_Framework_TestCase
 {
     public function testInstantiation()
     {
-        $this->assertInstanceOf('Maknz\Slack\Message', $this->getMessage());
+        $this->assertInstanceOf('JoshuaADickerson\Slack\Message', $this->getMessage());
     }
 
     public function testSetText()
@@ -182,6 +182,6 @@ class MessageUnitTest extends PHPUnit_Framework_TestCase
 
     protected function getMessage()
     {
-        return new Message(Mockery::mock('Maknz\Slack\Client'));
+        return new Message(Mockery::mock('JoshuaADickerson\Slack\Client'));
     }
 }

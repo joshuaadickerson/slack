@@ -1,6 +1,6 @@
 <?php
 
-namespace Maknz\Slack;
+namespace JoshuaADickerson\Slack;
 
 use InvalidArgumentException;
 
@@ -571,7 +571,7 @@ class Attachment
             return $this;
         }
 
-        throw new InvalidArgumentException('The attachment field must be an instance of Maknz\Slack\AttachmentField or a keyed array');
+        throw new InvalidArgumentException('The attachment field must be an instance of JoshuaADickerson\Slack\AttachmentField or a keyed array');
     }
 
     /**
@@ -668,7 +668,7 @@ class Attachment
             return $this;
         }
 
-        throw new InvalidArgumentException('The attachment action must be an instance of Maknz\Slack\AttachmentAction or a keyed array');
+        throw new InvalidArgumentException('The attachment action must be an instance of JoshuaADickerson\Slack\AttachmentAction or a keyed array');
     }
 
     /**
